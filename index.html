@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Registration Form</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<script src="js/script.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container">
+		<header class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">Form 1</a>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="container">
+		
+		<form action="">
+			<div class="step-1" id="step-1">
+				<div class="form-group">
+					<input type="text" placeholder="shop name" name="shop-name" class="form-control">
+				</div>
+				<div class="form-group">
+					<select type="text" class="form-control" placeholder="shop category" name="shop-category">
+						<option value="">select category ...</option>
+						<option value="Heavy Industry">Heavy Industry</option>
+						<option value="Retail">Retail</option>
+						<option value="Food">Food</option>
+						<option value="Cars">Cars</option>
+						<option value="Toys">Toys</option>
+						<option value="Insurances">Insurances</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="email" name="email">
+				</div>
+
+				<!-- Button to go to step 2 -->
+				<button class="btn btn-primary go-to-step-2-button">Next</button>
+			</div>
+
+			<div class="step-2" id="step-2">
+				<h3>Just one more step</h3>
+				<div class="form-group">
+					<input type="text" id="password" class="form-control" placeholder="password" name="password">
+					<div class="password-strength-indicator form-control" id="password-strength-indicator">No password</div>
+				</div>
+				<select type="text" class="form-control" placeholder="countries" name="countries" multiple="multiple">
+					<option>Bulgaria</option>
+					<option>UK</option>
+					<option>USA</option>
+					<option>Germany</option>
+					<option>France</option>
+				</select>
+				<select type="text" class="form-control" placeholder="currencies" name="currencies" multiple="multiple">
+					<option>BGN</option>
+					<option>GBP</option>
+					<option>USD</option>
+					<option>EUR</option>
+				</select>
+
+				<!-- Button to go to step 1 -->
+				<button class="btn btn-default go-to-step-1-button">Back</button>
+				<!-- Button to go to step 3 -->
+				<button class="btn btn-primary go-to-step-3-button">Next</button>
+			</div>
+			<div class="step-3" id="step-3">
+				<h3>Final step</h3>
+				<input type="text" class="form-control" placeholder="first name" name="first-name">
+				<input type="text" class="form-control" placeholder="last name" name="last-name">
+				<input type="text" class="form-control" placeholder="city" name="city">
+				<input type="text" class="form-control" placeholder="municipality" name="municipality">
+				<input type="text" class="form-control" placeholder="address" name="address">
+				<input type="text" class="form-control" placeholder="house" name="house-number">
+				<input type="text" class="form-control" placeholder="postcode" name="postcode">
+
+				<!-- Button to go to step 2 -->
+				<button class="btn btn-default go-to-step-2-button">Back</button>
+				<!-- Button to submit the form -->
+				<button class="btn btn-primary submit-button">Next</button>
+			</div>
+		</form>
+	</div>
+
+
+	</body>
+
+
+</html>
